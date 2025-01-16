@@ -3,31 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .box {
-        width: 80%;
-        max-width: 500px;
-     
-        max-height: 800px;
-        /* min-height: 220px; */
-        margin: auto;
-      }
-      .box img {
-        width: 100%;
-        aspect-ratio: 500 / 800; /* 이미지 비율 */
-        object-fit: cover; /* 필요 시 이미지 조정 방식 */
-      }
-    </style>
+    <title>스와이퍼 반응형</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/res-swiper.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/res-swiper.js"></script>
   </head>
   <body>
-    <div class="box">
-      <img src="images/image01.jpg" alt="" />
+    <div class="swiper visualSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/image01.jpg" alt="이미지1" />
+          <div class="visualSwiper-info">
+            <p>afhdlasd</p>
+            <button>버튼</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image02.webp" alt="이미지2" />
+          <div class="visualSwiper-info">
+            <p>afhdlasd</p>
+            <button>버튼</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image03.webp" alt="이미지3" />
+          <div class="visualSwiper-info">
+            <p>afhdlasd</p>
+            <button>버튼</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image04.webp" alt="이미지1" />
+          <div class="visualSwiper-info">
+            <p>afhdlasd</p>
+            <button>버튼</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
